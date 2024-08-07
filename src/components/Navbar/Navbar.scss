@@ -6,7 +6,6 @@
   position: sticky;
   top: 0;
   z-index: 2;
-
   .navbarcontainer {
     padding: 12px 50px;
     margin: 0 auto;
@@ -83,7 +82,7 @@
   }
 
   .menuopen {
-    display: block;
+    display: none;
     z-index: 2;
     position: absolute;
     top: 74px;
@@ -92,6 +91,9 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.87);
     transition: all 0.3s ease;
+    @include md{
+      display: block;
+    }
     &.open {
       right: 0;
     }
